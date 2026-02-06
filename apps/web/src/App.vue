@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from './components/navigation/Navbar.vue';
+// import { Hello } from '@repo/ui';
 </script>
 
 <template>
