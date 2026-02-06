@@ -7,7 +7,12 @@ import './style.css'
 
 const primevueOptions = {
     theme: {
-        preset: Aura
+        preset: Aura,
+        options: {
+            prefix: 'au',
+            darkModeSelector: 'system',
+            cssLayer: false,
+        },
     },
 };
 
