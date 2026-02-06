@@ -1,9 +1,11 @@
 <script setup>
-import { Hello } from '@repo/ui';
-import Button from "primevue/button"
+import Navbar from './components/navigation/Navbar.vue';
 </script>
 
 <template>
-  <Hello />
-  <Button label="Button" />
+  <Navbar />
+  
+  <main>
+    <RouterView />
+  </main>
 </template>
