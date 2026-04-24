@@ -1,4 +1,7 @@
 /* Tailwind theme configuration */
 @theme {
-    
+    --font-sans: "Inter", sans-serif;
+
+    --color-surface-default: var(--surface-default);
+    --color-divider-secondary: var(--divider-secondary);
 }
