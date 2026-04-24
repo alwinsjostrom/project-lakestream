@@ -17,14 +17,20 @@ const handleLogout = () => {
 </script>
 
 <template>
-    <header class="flex justify-between items-center p-4 border-b">
-        <span>Title</span>
+    <header class="flex justify-between items-center px-6 py-4 border-b border-divider-secondary">
+        <RouterLink to="/">
+            <img
+                src="/icon.svg"
+                class="h-10 w-10"
+            >
+        </RouterLink>
         
         <nav class="flex items-center gap-2">
             <RouterLink to="/">
                 <Button
                     label="Home"
                     severity="secondary"
+                    :disabled="!auth.isAuthenticated"
                 />
             </RouterLink>
 
@@ -32,6 +38,7 @@ const handleLogout = () => {
                 <Button
                     label="About"
                     severity="secondary"
+                    :disabled="!auth.isAuthenticated"
                 />
             </RouterLink>
 
